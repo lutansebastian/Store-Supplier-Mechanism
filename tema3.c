@@ -235,7 +235,6 @@ void find_isolate(graph_t *graph, int *depo_IDs, int depo_nr,
         if (graph->adjacency_matrix[i][i] == 0.0 && flag != -1){
             for (k = 0; k < graph->number_of_nodes; k++){
                 for (l = 0; l < graph->number_of_nodes; l++){
-                    /* Initializari sume pentru linii si coloane */
                     sum += graph->adjacency_matrix[k][i] +
                     graph->adjacency_matrix[i][l];
                     line_sum = line_sum + graph->adjacency_matrix[k][i];
